@@ -1,1 +1,6 @@
-// TODO: Add API method to retrieve contacts
+export const grabRandomUsers = async () => {
+  const resp = await fetch('
+  https://randomuser.me/api
+  ');
+  return resp.json();
+};
