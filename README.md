@@ -1,18 +1,21 @@
-# React Student Starter
+# Contact Book Mini-Capstone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**This would probably not be a 'real' capstone as it doesn't really solve any 'problem'.** It's purpose is illustrative. It's on you to connect some (or all) of the concepts here to your capstones.
 
-## Motivations
+## Overview
 
-Although the bootstrapping is generally great, React prides itself on 'un-opinionated.' However, as a student, you probably do need a bit more 'guidance' to make your initial learning curve a bit smoother.
+### Primary Steps (Front-End)
 
-That's why I created this template repo. It _does_ include some better linting and also checks for some specific common 'sloppiness.'
+1. Apply the _repository pattern_ to `fetch` some users from the [Random User API.](https://randomuser.me/documentation)
 
-Prettier is also included, and I've updated `"browserslist"` to allow us to write our code for modern browsers only - no IE11, etc.
+2. Create _React_ components for cards similar to the one seen [here.](https://randomuser.me/). At a minimum, include:
 
-Finally, some choice extensions and settings are also included for VS Code, along with a setting to make sure that Windows users use appropriate line endings.
+- Name
+- ✉️
+- 🎂
+- ☎️
 
-All of this should limit 'student sloppiness' while reinforcing some 'coding best practices.' 😎
+**To be continued...**
 
 ## Available Scripts
 
