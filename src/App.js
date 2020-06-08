@@ -6,7 +6,7 @@ export const App = () => {
   return (
     <div>
       <h1 className="title">Contact Book!</h1>
-      <Info />;
+      <Info />
     </div>
   );
 };

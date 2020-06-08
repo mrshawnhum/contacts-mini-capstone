@@ -23,7 +23,10 @@ export class components extends React.Component {
 
   async componentDidMount() {
     try {
-      this.setState({ products: await grabRandomUsers() });
+      const resp = await fetch("https://randomuser.me/api")
+        .then((resp) => resp.json())
+        .then((data) => data.results[0])
+        .then((x) => this.setState({ results: x.name }));
     } catch (error) {
       console.error(error);
     }
@@ -33,12 +36,13 @@ export class components extends React.Component {
     return (
       <main>
         <div className="columns is-vcentered">
-          <Name />
+          {this.state.results.first}
+          {/* <Name />
           <Address />
           <Birthday />
           <Email />
           <Password />
-          <PhoneNumber />
+          <PhoneNumber /> */}
         </div>
       </main>
     );
