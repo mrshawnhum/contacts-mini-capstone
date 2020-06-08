@@ -1,8 +1,15 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-export class Address extends React.Component {
-  static propTypes = {};
+export const Address = ({ results }) => {
+  return (
+    <div>
+      <button type="button">Address</button>
+      <p></p>
+    </div>
+  );
+};
 
-  render() {}
-}
+Address.propTypes = {
+  results: PropTypes.array,
+};

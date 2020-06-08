@@ -1,8 +1,15 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-export class Name extends React.Component {
-  static propTypes = {};
+export const Name = ({ results }) => {
+  return (
+    <div>
+      <button type="button">Name</button>
+      <p></p>
+    </div>
+  );
+};
 
-  render() {}
-}
+Name.propTypes = {
+  results: PropTypes.array,
+};

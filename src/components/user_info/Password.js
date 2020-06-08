@@ -1,8 +1,15 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-export class Password extends React.Component {
-  static propTypes = {};
+export const Password = ({ results }) => {
+  return (
+    <div>
+      <button type="button">Password</button>
+      <p></p>
+    </div>
+  );
+};
 
-  render() {}
-}
+Password.propTypes = {
+  results: PropTypes.array,
+};

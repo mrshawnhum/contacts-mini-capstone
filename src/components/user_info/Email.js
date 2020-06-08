@@ -1,8 +1,15 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-export class Email extends React.Component {
-  static propTypes = {};
+export const Email = ({ results }) => {
+  return (
+    <div>
+      <button type="button">Email</button>
+      <p></p>
+    </div>
+  );
+};
 
-  render() {}
-}
+Email.propTypes = {
+  results: PropTypes.array,
+};

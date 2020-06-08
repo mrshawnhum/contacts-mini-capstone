@@ -1,8 +1,15 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-export class PhoneNumber extends React.Component {
-  static propTypes = {};
+export const PhoneNumber = ({ results }) => {
+  return (
+    <div>
+      <button type="button">Phone Number</button>
+      <p></p>
+    </div>
+  );
+};
 
-  render() {}
-}
+PhoneNumber.propTypes = {
+  results: PropTypes.array,
+};
