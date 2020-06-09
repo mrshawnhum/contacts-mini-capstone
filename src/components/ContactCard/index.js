@@ -35,16 +35,20 @@ export class ContactCard extends React.Component {
   ];
 
   renderInfoToggles() {
-    return this.infoToggles.map(({ icon }) => (
-      <Toggle key={icon} icon={icon} />
+    return this.infoToggles.map(({ icon, info }) => (
+      <Toggle key={icon} icon={icon} info={info} stProxy={this.stProxy} />
     ));
   }
 
   render() {
     return (
-      <div>
-        <Pic name={this.props.name} pic={this.props.picture} />
-        <div className="ContactCard">{this.renderInfoToggles()}</div>
+      <div className="ContactCard">
+        <Pic
+          className={styles.Pic}
+          name={this.props.name}
+          pic={this.props.picture}
+        />
+        <div className={styles.Toggles}>{this.renderInfoToggles()}</div>
       </div>
     );
   }
