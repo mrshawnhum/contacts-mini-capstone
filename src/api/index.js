@@ -1,5 +1,5 @@
-export const grabRandomUsers = async () => {
-  const resp = await fetch("https://randomuser.me/api").then((resp) =>
-    resp.json()
+export const grabContactList = async (index = 3) => {
+  const res = await fetch(`https://randomuser.me/api/?results=${index}`);
+  return res.json();
   );
 };
