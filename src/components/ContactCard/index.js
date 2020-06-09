@@ -4,6 +4,8 @@ import React from "react";
 import { Toggle } from "./Toggle";
 import { Pic } from "./Pic";
 
+import { getStateProxy } from "utils/";
+
 export class ContactCard extends React.Component {
   static propTypes = {
     cell: PropTypes.string,
@@ -14,12 +16,20 @@ export class ContactCard extends React.Component {
     picture: PropTypes.object,
   };
 
+  state = {
+    activeInfo: "cell",
+  };
+
+  stProxy = getStateProxy(this);
+
   infoToggles = [
     {
       icon: "mobile",
+      info: "cell",
     },
     {
       icon: "envelope",
+      info: "email",
     },
   ];
 
