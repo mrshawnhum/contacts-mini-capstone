@@ -19,13 +19,7 @@ export class ContactCard extends React.Component {
       icon: "mobile",
     },
     {
-      icon: "birthday-cake",
-    },
-    {
       icon: "envelope",
-    },
-    {
-      icon: "compass",
     },
   ];
 
