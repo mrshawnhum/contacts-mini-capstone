@@ -1,0 +1,14 @@
+.Toggles {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 240px;
+}
+
+.Pic {
+  margin: 0;
+}
+
+.Pic img {
+  border-radius: 50%;
+}
