@@ -1,4 +1,4 @@
-import React from "react";
+export { ContactCard } from "./ContactCard";
 import "react-bulma-components/dist/react-bulma-components.min.css";
 
 import { Address } from "./user_info";
