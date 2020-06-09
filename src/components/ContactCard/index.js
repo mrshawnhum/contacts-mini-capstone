@@ -6,12 +6,13 @@ import { Pic } from "./Pic";
 
 import { getStateProxy } from "utils/";
 
+import "./ContactCard.css";
+import styles from "./ContactCard.module.css";
+
 export class ContactCard extends React.Component {
   static propTypes = {
     cell: PropTypes.string,
-    dob: PropTypes.object,
     email: PropTypes.string,
-    location: PropTypes.object,
     name: PropTypes.object,
     picture: PropTypes.object,
   };
