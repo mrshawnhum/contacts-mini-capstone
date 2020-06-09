@@ -4,8 +4,7 @@ import React from "react";
 export const Address = ({ results }) => {
   return (
     <div>
-      <button type="button">Address</button>
-      <p></p>
+      <address></address>
     </div>
   );
 };
