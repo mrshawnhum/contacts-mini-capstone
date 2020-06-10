@@ -1,3 +1,7 @@
 .Toggle {
   transition: font-size 0.2s ease;
 }
+
+.Toggle:hover {
+  color: greenyellow;
+}

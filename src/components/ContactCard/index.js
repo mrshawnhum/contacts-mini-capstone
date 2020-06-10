@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { Toggle } from "./Toggle";
-import { Pic } from "./Pic";
+import { InfoDisplays } from "./InfoDisplays/";
+import { Toggle } from "./Toggle/";
+import { Pic } from "./Pic/";
 
 import { getStateProxy } from "utils/";
 
@@ -43,11 +44,13 @@ export class ContactCard extends React.Component {
   render() {
     return (
       <div className="ContactCard">
+        <h1>Contact</h1>
         <Pic
           className={styles.Pic}
           name={this.props.name}
           pic={this.props.picture}
         />
+        <InfoDisplays info={this.props[this.state.activeInfo]} />
         <div className={styles.Toggles}>{this.renderInfoToggles()}</div>
       </div>
     );
